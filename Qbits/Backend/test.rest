@@ -1,0 +1,16 @@
+http://localhost:8080
+
+Accept: application/json;
+Content-Type: application/json; charset=utf-8
+
+POST /auth/signup/seller
+{
+  "fullName": "Harsh Gaonker",
+  "phone": "1231231231",
+  "email": "dev@test.com",
+  "password": "333333",
+  "permAddress": "123 fake street",
+  "profilePicture": "http://hello",
+  "sellerRole": "INDIVIDUAL"
+}
+
