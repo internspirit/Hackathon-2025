@@ -46,7 +46,7 @@ git push origin main  # Or create a pull request if required
 ```
 
 ## ⏳ Submission Deadline
-🕒 Ensure your project is pushed by **Continously after every hour** to be considered for evaluation.
+🕒 Ensure your project is pushed  **Continously after every hour** to be considered for evaluation.
 
 ## 🏆 Judging Criteria
 Projects will be evaluated based on:
