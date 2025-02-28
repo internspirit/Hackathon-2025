@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fully Transparent Glassmorphism Buttons */
+.btn-glass {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Subtle white border */
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background: transparent; /* No grey tint */
+    backdrop-filter: blur(15px); /* Glass blur effect */
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.1); /* Soft glow */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Hover Effect - Bright Glow */
+  .btn-glass:hover {
+    transform: scale(1.05);
+    border-color: rgba(255, 255, 255, 0.6); /* Stronger white border */
+    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Click Effect */
+  .btn-glass:active {
+    transform: scale(0.95);
+  }
+  
+  /* Infinite Floating Spline */
+/* Infinite Floating Spline */
+.spline-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none; /* Prevents blocking clicks */
+    animation: floatAnimation 8s infinite ease-in-out alternate;
+}
+
+/* Floating Effect */
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Glassmorphism Buttons */
+.btn-glass {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Green Accept Button */
+  .btn-accept {
+    border: 2px solid #16a34a; /* Green Border */
+    box-shadow: 0px 0px 10px rgba(22, 163, 74, 0.5); /* Green Glow */
+  }
+  
+  .btn-accept:hover {
+    box-shadow: 0px 0px 20px rgba(22, 163, 74, 0.8); /* Stronger Green Glow */
+  }
+  
+  /* Red Reject Button */
+  .btn-reject {
+    border: 2px solid #ef4444; /* Red Border */
+    box-shadow: 0px 0px 10px rgba(239, 68, 68, 0.5);
+  }
+  
+  .btn-reject:hover {
+    box-shadow: 0px 0px 20px rgba(239, 68, 68, 0.8);
+  }
+  
+  /* Full Glass Effect (No Grey Tint) */
+  .bg-transparent {
+    background: rgba(255, 255, 255, 0.05); /* Light transparency */
+    backdrop-filter: blur(15px); /* Smooth blur */
+    -webkit-backdrop-filter: blur(15px);
+  }
+  
